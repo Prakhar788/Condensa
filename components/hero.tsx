@@ -4,11 +4,23 @@ import { motion } from "framer-motion";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { Highlight,HeroHighlight } from "./ui/hero-highlight";
 import { RainbowButton } from "./ui/rainbow-button";
+import Image from "next/image";
 
 const Hero = () => (
   <div className="pt-10 md:pt-20 px-6 lg:px-0">
-    <div className="text-gray-600 flex items-center gap-x-1.5 text-2xl border border-gray-200 rounded-full px-3 py-1.5 mx-auto w-fit mb-8">
-      <p className="text-sm sm:text-base">🎉 </p>
+    <div className="text-gray-600 flex items-center gap-x-1.5 text-2xl   px-3 py-1.5 mx-auto w-fit mb-8">
+    <Link 
+      href="https://www.producthunt.com/posts/condensa?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-condensa" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <Image
+        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=527316&theme=dark"
+        alt="Condensa - Maximize Moments: Condensed Videos, Uncompromised Quality | Product Hunt"
+        width={200}
+        height={54}
+      />
+    </Link>
     </div>
     {/* <h1 className="text-center text-4xl font-bold md:text-5xl lg:text-7xl lg:font-semibold text-gray-900 text-balance">
     Condense Videos
